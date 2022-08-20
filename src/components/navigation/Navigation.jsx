@@ -13,13 +13,13 @@ const Navbar = styled.div`
 
   @media ${device.mobileM} {
     max-width: 100%;
-    height: 15vh;
+    height: 12vh;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.tablet} {
     max-width: 100%;
-    height: 15vh;
+    height: 12vh;
   }
 `;
 
