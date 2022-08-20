@@ -8,21 +8,18 @@ const Navbar = styled.div`
   @media ${device.mobileS} {
     max-width: 100%;
     height: 12vh;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.mobileM} {
     max-width: 100%;
     height: 15vh;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.tablet} {
     max-width: 100%;
-    height: 20vh;
-  }
-
-  @media ${device.laptop} {
+    height: 15vh;
   }
 `;
 
@@ -56,6 +53,12 @@ const NavbarText = styled.div`
     font-weight: bold;
     margin: 2em;
   }
+
+  @media ${device.laptop} {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 2em;
+  }
 `;
 
 //styles for navigation button
@@ -65,7 +68,7 @@ const NavButton = styled.button`
     width: 7em;
     height: 2.5em;
     border-radius: 0.25em;
-    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background-color: ${(props) => props.theme.body};
     color: ${(props) => props.theme.fontColor};
     display: flex;
@@ -99,6 +102,20 @@ const NavButton = styled.button`
     align-items: center;
     margin-right: 2em;
     font-size: 1.8em;
+    font-weight: 700;
+  }
+
+  @media ${device.laptop} {
+    width: 8em;
+    height: 3em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: ${(props) => props.theme.fontColor};
+    align-items: center;
+    margin-right: 2em;
+    font-size: 1em;
     font-weight: 700;
   }
 `;
