@@ -11,10 +11,15 @@ const Navbar = styled.div`
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
   }
 
- @media ${device.mobileM} {
+  @media ${device.mobileM} {
+    max-width: 100%;
+    height: 15vh;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.tablet} {
+    max-width: 100%;
+    height: 20vh;
   }
 
   @media ${device.laptop} {
@@ -39,6 +44,18 @@ const NavbarText = styled.div`
     margin: 0.5em;
     color: ${(props) => props.theme.fontColor};
   }
+
+  @media ${device.mobileM} {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em;
+  }
+
+  @media ${device.tablet} {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 2em;
+  }
 `;
 
 //styles for navigation button
@@ -56,6 +73,33 @@ const NavButton = styled.button`
     justify-content: space-evenly;
     align-items: center;
     margin-right: 0.5em;
+  }
+
+  @media ${device.mobileM} {
+    width: 8em;
+    height: 3em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: ${(props) => props.theme.fontColor};
+    align-items: center;
+    margin-right: 1em;
+    font-weight: 700;
+  }
+
+  @media ${device.tablet} {
+    width: 8em;
+    height: 3em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: ${(props) => props.theme.fontColor};
+    align-items: center;
+    margin-right: 2em;
+    font-size: 1.8em;
+    font-weight: 700;
   }
 `;
 
